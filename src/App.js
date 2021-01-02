@@ -2,6 +2,7 @@ import {React, useState} from 'react';
 import {useSelector, useDispatch} from 'react-redux';
 import {addMovie} from './redux';
 import Container from './components/Container';
+import Button from './components/Button';
 
 const App = () => {
   
@@ -11,8 +12,9 @@ const App = () => {
 
   return (
       <Container>
-        {movies}
-        
+        <Button color="red">Button Text</Button>
+        {/* {movies}
+          
         <form onSubmit={e => {
             e.preventDefault();
             dispatch(addMovie(formField));
@@ -21,7 +23,7 @@ const App = () => {
           
           <input onChange={e => {setFormField(e.target.value)}} value={formField} />
           <button>Add "THE MOVIE" to the list</button>
-        </form>
+        </form> */}
       </Container>
   );
 }
