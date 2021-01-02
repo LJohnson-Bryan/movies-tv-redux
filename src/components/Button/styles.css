@@ -1,10 +1,28 @@
-.blue-button {
+.blue-button, .red-button {
     outline: none;
     border: 0;
     border-radius: 9999px;
-    padding: 14px 16px;
+    padding: 9px 32px;
+    box-shadow: 1px 4px 0px rgba(0,0,0,0.4);
+    color: white;
+    font-size: 15px;
 }
 
 .blue-button:hover {
-
+    background: linear-gradient(to bottom, #1992D4, #127FBF);
+    box-shadow: 1px 4px 0px rgba(0,0,0,0.4);
 }
+
+.blue-button {
+    background: linear-gradient(to bottom, #2BB0ED, #1992D4);
+}
+
+.red-button {
+    background: linear-gradient(to bottom, #BA2525, #A61B1B);
+    }
+
+.red-button:hover {
+    background: linear-gradient(to bottom, #A61B1B, #911111);
+    box-shadow: 1px 4px 0px rgba(0,0,0,0.4);
+}
+

@@ -12,8 +12,8 @@ const App = () => {
 
   return (
       <Container>
-        <Button>Test</Button>
-        {movies}
+        <Button color="red">Button Text</Button>
+        {/* {movies}
           
         <form onSubmit={e => {
             e.preventDefault();
@@ -23,7 +23,7 @@ const App = () => {
           
           <input onChange={e => {setFormField(e.target.value)}} value={formField} />
           <button>Add "THE MOVIE" to the list</button>
-        </form>
+        </form> */}
       </Container>
   );
 }
