@@ -1,0 +1,10 @@
+.blue-button {
+    outline: none;
+    border: 0;
+    border-radius: 9999px;
+    padding: 14px 16px;
+}
+
+.blue-button:hover {
+
+}
