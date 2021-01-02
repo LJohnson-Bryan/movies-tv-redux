@@ -1,4 +1,4 @@
-import redux, {createStore} from "redux"
+import redux, {createStore, combineReducers} from 'redux';
 
 export const addMovie = title => {
     return {
@@ -6,6 +6,12 @@ export const addMovie = title => {
         payload: title
     }
 }
+
+// // Combine all reducers into single state tree
+// const rootReducer = combineReducers({
+//     movies: movieReducer,
+//     tvShows: tvShowReducer
+// });
 
 function reducer(state = ['Hello World', 'Hi World!'], action) {
     switch(action.type) {
