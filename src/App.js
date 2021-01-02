@@ -1,17 +1,19 @@
 import {React, useState} from 'react';
 import {useSelector, useDispatch} from 'react-redux';
-import {addMovie} from './redux';
+import {addMovie, removeMovie} from './redux/movies';
 import Container from './components/Container';
 
 const App = () => {
   
-  const movies = useSelector(state => state)
+  const state = useSelector(state => state)
   const dispatch = useDispatch();
   const [formField, setFormField] = useState('');
 
   return (
       <Container>
-        {movies}
+        {state.movies.map(item => (
+          <p>{item} <a href="#" onClick={() => {dispatch(removeMovie(item))}}>Delete</a></p>
+        ))}
         
         <form onSubmit={e => {
             e.preventDefault();
