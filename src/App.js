@@ -1,7 +1,7 @@
 import React from 'react';
 import Movies from './components/Movies';
 import Home from './components/Home';
-// import TV from './components/TV';
+import TV from './components/TV';
 import {
   BrowserRouter as Router,
   Switch,
@@ -15,7 +15,7 @@ const App = () => {
       <Switch>
         <Route exact path = "/" component={Home} />
         <Route path="/movies" component={Movies} />
-        {/* <Route path="/tv" component={TV} /> */}
+        <Route path="/tv" component={TV} />
       </Switch>
     </Router>
   );

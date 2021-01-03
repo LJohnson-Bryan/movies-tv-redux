@@ -3,6 +3,7 @@ import Button from '../Button';
 import {useDispatch} from 'react-redux';
 import {removeMovie} from '../../redux/movies';
 import './styles.css';
+import { removeShow } from '../../redux/shows';
 
 const Card = (props) => {
     const dispatch = useDispatch();
@@ -11,7 +12,7 @@ const Card = (props) => {
         <div className="card">
             <h2>{props.title}</h2>
             <Button color="red" onClick={() => {
-                dispatch(removeMovie(props.title))
+                dispatch(props.type === "movie" ? removeMovie(props.title) : removeShow(props.title))
             }}>Delete</Button>
         </div>
     );
