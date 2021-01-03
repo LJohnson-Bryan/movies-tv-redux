@@ -3,7 +3,7 @@ import './styles.css';
 
 const Button = (props) => {
     return ( 
-        <button className={`${props.color}-button`}>{props.children}</button>
+        <button className={`${props.color}-button`} {...props}>{props.children}</button>
     );
 }
 

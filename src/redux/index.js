@@ -1,4 +1,4 @@
-import redux, {createStore, combineReducers} from 'redux';
+import {createStore, combineReducers} from 'redux';
 import {movieReducer} from './movies';
 
 // Combine all reducers into single state tree
