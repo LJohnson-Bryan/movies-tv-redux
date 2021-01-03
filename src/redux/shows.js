@@ -14,7 +14,7 @@ export const removeShow = title => {
 
 export const getShows = () => {
     return {
-        type: "GET_SHOW"
+        type: "GET_SHOWS"
     }
 }
 
@@ -26,7 +26,7 @@ export const movieReducer = (shows = initialState, action) => {
             return [...shows, action.payload];
         case "REMOVE_SHOW":
             return shows.filter(show => show !== action.payload);
-        case "GET_SHOW":
+        case "GET_SHOWS":
             return shows;
         default:
             return shows;
