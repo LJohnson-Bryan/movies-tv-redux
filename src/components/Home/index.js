@@ -6,7 +6,7 @@ const Home = () => {
         <div>
             <div className="selector-bg">
                 <Link to="/movies"><div className="selector-item movies-bg">Movies</div></Link>
-                <div className="selector-item tv-bg">TV-Shows</div>
+                <Link to="/tv"><div className="selector-item tv-bg">TV-Shows</div></Link>
             </div>
         </div> 
     );
