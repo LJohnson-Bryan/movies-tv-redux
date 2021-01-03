@@ -24,7 +24,7 @@ const App = () => {
           
           <input onChange={e => {setFormField(e.target.value)}} value={formField} />
           <button>Add "THE MOVIE" to the list</button>
-        </form>}
+        </form>
       </Container>
   );
 }
