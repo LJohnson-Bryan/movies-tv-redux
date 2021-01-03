@@ -4,7 +4,7 @@ import './styles.css';
 const Button = (props) => {
     return ( 
         <button className={`${props.color}-button`}>{props.children}</button>
-     );
+    );
 }
 
 Button.defaultProps = {
