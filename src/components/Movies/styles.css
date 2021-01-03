@@ -1,0 +1,8 @@
+.movies-banner {
+    background-image: url('../../images/movies-banner.png');
+    min-height: 200px;
+    background-attachment: fixed;
+    background-position: bottom;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+}

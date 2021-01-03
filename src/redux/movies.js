@@ -18,7 +18,7 @@ export const getMovies = () => {
     }
 }
 
-const initialState = ["Star Wars", "Movie 2"];
+const initialState = ["Star Wars", "Soul", "Onward", "Frozen", "Finding Dory"];
 
 export const movieReducer = (movies = initialState, action) => {
     switch(action.type) {
