@@ -25,7 +25,7 @@ export const movieReducer = (shows = initialState, action) => {
         case "ADD_SHOW":
             return [...shows, action.payload];
         case "REMOVE_SHOW":
-            return shows.filter(movie => movie !== action.payload);
+            return shows.filter(show => show !== action.payload);
         case "GET_SHOW":
             return shows;
         default:
