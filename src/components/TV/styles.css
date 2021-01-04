@@ -1,0 +1,10 @@
+.tv-banner {
+    background-image: url('../../images/shows-banner.png');
+    box-shadow: 6px 8px rgba(0,0,0,0.4);
+    min-height: 200px;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-size: cover;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+}
