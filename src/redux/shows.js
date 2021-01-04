@@ -18,9 +18,9 @@ export const getShows = () => {
     }
 }
 
-const initialState = ["Madalorean", "Game of Throne"];
+const initialState = ["The Mandalorian", "Game of Thrones", "The Crown", "Witcher", "Stranger Things", "The Wire", "Vikings", "Forensic Files"];
 
-export const movieReducer = (shows = initialState, action) => {
+export const showsReducer = (shows = initialState, action) => {
     switch(action.type) {
         case "ADD_SHOW":
             return [...shows, action.payload];

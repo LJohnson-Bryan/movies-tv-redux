@@ -1,13 +1,13 @@
 import {React, useState} from 'react';
 import {useSelector, useDispatch} from 'react-redux';
-import {addMovie} from '../../redux/movies';
+import {addShow} from '../../redux/shows';
 import Card from '../Card';
 import Container from '../Container';
 import Button from '../Button';
 import {Link} from "react-router-dom";
 import './styles.css';
 
-const Movies = () => {
+const Shows = () => {
 
     const state = useSelector(state => state);
     const [formField, setFormField] = useState('');
@@ -17,20 +17,20 @@ const Movies = () => {
         <div className="selector-bg">
 
         <Container>
-            <h1>Movies</h1>
+            <h1>TV-Shows</h1>
             <h3><Link to="/">Go Back.</Link></h3>
-            <div className="movies-banner"></div>
+            <div className="tv-banner"></div>
             <form className="input-form"
             onSubmit={e => {
                 e.preventDefault();
-                dispatch(addMovie(formField));
+                dispatch(addShow(formField));
                 setFormField('');
             }}>
-                <input type="text" onChange={e => {setFormField(e.target.value)}} value={formField} placeholder="Movie Title"/>
+                <input type="text" onChange={e => {setFormField(e.target.value)}} value={formField} placeholder="Show Title"/>
                 <Button>Submit</Button>
             </form>
             <div className="grid-items">
-                {state.movies.map(item => (<Card title={item} type="movie" />))}
+                {state.shows.map(item => (<Card title={item} type="tv"/>))}
             </div>
         </Container>
 
@@ -39,4 +39,4 @@ const Movies = () => {
 
 }
 
-export default Movies;
+export default Shows;
